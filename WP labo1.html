@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>Opgave1</title>
+
+		<script>
+			function jaar()
+			{
+				var jaartal = document.getElementById ("jaartal");
+	//			console.log(jaartal)
+				
+				if (jaartal.value  < 2016 || jaartal.value > 2018){	
+					alert("Geef een jaartal van 2016-2018 in")
+				}
+			}
+				
+			
+			
+		</script>
+
+	</head>
+		<form>
+			<p><label>Jaar: </label><input type="text" maxlength="4"id="jaartal"/></p>
+			<p><label>Niveau: </label><select name="Niveau">
+				<option value="1">beginners</option>
+				<option value="2">Gevorderd</option>
+				</select></p>
+			<p><label>Omschrijving: </label><input type="text" minlength="1"/></p>
+			<p><label>Code: </label><input type="text" value="2016-ABC-" maxlength="12"/></p>
+			<input type="button" onclick="jaar()" value="Verstuur">Verstuur</button>
+
+
+		</form>
+		
+	<body>
+		
+	</body>
+</html>
